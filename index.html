@@ -1,1 +1,188 @@
-<h1> test</h1>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Reflective Design Studio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="reflectivestudio.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Nixie One' rel='stylesheet'>
+  <style>
+    h1 {
+      font-family:'Condiment';
+      font-size: 46px;
+    }
+
+    #tagline {
+      font-family: 'Condiment';
+    }
+
+    .vision {
+      font-family: 'Nixie One';
+    }
+
+    .about-me {
+      font-family: 'Nixie One';
+    }
+
+    .contact-me {
+      font-family: 'Nixie One';
+    }
+
+    .nav-item {
+      font-family: 'Condiment';
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+      $(".about-me").css("display", "none")
+      $(".home").css("display", "none")
+      $(".contact-me").css("display", "none")
+
+      $(".nav-link-about-me").click(function(){
+          $(".vision").hide();
+          $(".contact-me").hide();
+          $(".home").hide();
+          $(".about-me").show();
+          $(".heading").css({
+            "margin-top": "-10px"
+          });
+      });
+
+      $(".nav-link-home").click(function(){
+          $(".home").show();
+          $(".about-me").hide();
+          $(".contact-me").hide();
+          $(".vision").show();
+          $(".heading").css ({
+            "margin-top": "70px"
+          });
+      });
+
+      $(".nav-link-contact-me").click(function(){
+          $(".contact-me").show();
+          $(".about-me").hide();
+          $(".home").hide();
+          $(".vision").hide();
+          $(".heading").css ({
+            "margin-top": "-10px"
+          });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div id="container1">
+          <div class="content">
+            <img src="https://i.pinimg.com/originals/9a/98/da/9a98dafc6882e17e7b995c467f8fde66.jpg" alt="reflection of eiffel tower in water" class="home-page-image">
+          </div> <!--content-->
+        </div> <!--container1-->
+      </div> <!--col-4-->
+
+      <div class="col-8">
+        <div class="heading">
+          <h1>Reflective Design Studio</h1>
+          <p id="tagline">-home to web developer and writer extraordinaire Nyiema Bayfield-</p>
+        </div>
+
+        <div class="vision">
+          <br>
+          <br>
+          <p>want jaw-dropping web design?  Uh-huh.</p>
+          <p>want smart and clever carefully crafted content?  Yup.</p>
+          <p>want to make a lasting impression on site visitors?  Certainly.</p>
+          <p>want to create simple yet stunning digital experiences?  Most Definitely.</p>
+          <p>want the ability to transform customers into brand enthusiasts?  Indubitably.</p>
+          <p>want your online presence to actually reflect your company and what you do?  Yes!</p>
+          <br>
+          <p>Well, then you've come to the right place!</p>
+          <br>
+          <br>
+        </div>
+
+        <div class="about-me">
+          <p>I am:</p>
+            <ul>
+              <li>10% quirky</li>
+              <li>20% artist</li>
+              <li>30% writer</li>
+              <li>40% web and ux designer</li>
+            </ul>
+          <p>I bring a little bit of me to every project I work on.  So here's what you need to know:</p>
+          <br>
+          <p>I'm a published poet with a love for a carefully turned phrase.  I believe good design is nothing without good content to support it.  I have a flare for finding what's unique and different, and can utilize this talent to help you elevate yourself above the competition.  I have evil-genius tendencies and would love to help you perfect your plans for world domination.</p>
+          <br>
+          <img id="evil-genius-logo" src="http://www.schmollcreative.com/wp-content/uploads/2016/07/ceg_logo3.jpg" alt="evil genius logo">
+          <br>
+          <p>I was born and raised in the San Francisco-Bay Area, forced to live in exile in Los Angeles while attending the University of Southern California, and have survived(just barely) a full-changing of the seasons in Tucson, Arizona; Madison, Wisconsin; and Mill Spring, North Carolina.</p>
+        </div>
+
+        <div class="home">
+        </div>
+
+        <div class="contact-me">
+          <p>Phone: (510)228-9065</p>
+          <p>Email: ReflectiveDesignStudio@Gmail.com</p>
+
+          <div class="form">
+            <form name="contactform" method="post" action="/action_page.php">
+
+              <label for="first_name">First Name:</label>
+              <input type="text" id="fname" name="first_name" placeholder="Your name..">
+
+              <label for="last_name">Last Name:</label>
+              <input type="text" id="lname" name="last_name" placeholder="Your last name..">
+
+              <label for="email">Email:</label>
+              <input type="email" id="e-mail" name="email" placeholder="Your email address...">
+
+              <label for="comments">Subject:</label>
+              <textarea id="subject" name="comments" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input type="submit" value="Submit" id="submit">
+            </form>
+          </div> <!-- end of "form" class-->
+
+        </div> <!-- end of "contact-me" class-->
+
+
+
+
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link-about-me" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-home" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-contact-me" href="#">Contact Me</a>
+        </li>
+      </ul>
+
+    </div> <!-- end of "col-8"class-->
+
+
+    </div> <!--content-->
+  </div> <!--#container1-->
+  </div> <!--row-->
+</div> <!--container-->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
