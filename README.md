@@ -1,1 +1,3 @@
-# ntmbayfield.github.io
+The Reflective Design Studio Website is a portfolio site which I built for the new business I want to start providing web development services.  I created this website while attending Code Ramp, a free 6-week intro to coding course offered by Code Tenderloin in San Francisco.  This site was constructed as part of my final project for the course.  Our assignment was to create a personal portfolio site that utilized responsive design, included a form for visitors to fill-out, followed basic principles of UX design, contained an "About Me" page and a "Contact Me" page, and utilized Javascript and jQuery to create interactive elements. 
+
+The site is hosted on Github and can be found online by visiting https://www.ntmbayfield.github.io.
